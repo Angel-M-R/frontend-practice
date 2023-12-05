@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Jost:wght@300;400;500&family=Oxygen&family=Oxygen+Mono&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --orange: #ff764d;
+    --yellow: #fbffa7;
+    --lightBlue: #b1c5ff;
+    --green: #b6ffc0;
+    --purple: #d5b3ff;
+    --blue: #0000ff;
+    --gray: #F3F3F3;
+    --poppins: 'Poppins', sans-serif;
+    --jost: 'Jost', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--jost);
+    background-color: var(--gray);
+}
+h1,h2,h3,h4,ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav */
+nav{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
+}
+.nav-menu{
+    display: flex;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+}
+.nav-menu img{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 60px;
+}
+.nav-menu ul:last-child{
+    margin-left: auto;
+}
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-menu ul li{
+    font-size: 1.2rem;
+}
+.active {
+    color: var(--orange)
+}
+.login{
+    margin-right: 2rem;
+}
+
+.login-text{
+    color: var(--blue);
+}
+
+.nav-menu .login li{
+    font-size: 1rem;
+}
+
+.sub-menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.sub-menu ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 1.4rem;
+}
+
+.separator{
+    border-bottom: 3px solid var(--gray);
+}
+
+/* HEADER */
+
+header{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    height: 90vh;
+}
+.header-image {
+    background-image: url("../images/header.jpg");
+    background-position: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+header h1{
+    display: block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: var(--orange);
+}
+
+/* MAIN */
+
+main section article{
+    max-width: 1600px;
+    background-color: white;
+    padding: 6rem 0;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+main section article h3, main section article p{
+    max-width: 800px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+main section article h3 span{
+    color: var(--blue)
+}
+
+main section article p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* image section */
+.image-section{
+    position: relative;
+    overflow: hidden;
+    height: 60vw;
+    max-height: 800px;
+    width: 100%;
+}
+.first-image{
+    position: absolute;
+    max-width: 666px;
+    width: 40%;
+    top: 15%;
+    left: 10%;
+    z-index: 3;
+}
+.second-image{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    z-index: 2;
+    width: 35%;
+}
+.yellow-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--yellow);
+    width: 60%;
+    height: 100%;
+}
+
+/* video section */
+section video{
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    max-width: 800px;
+    width: 80%;
+}
+.video-section{
+    padding: 0;
+}
+.video-section p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 10px auto 0 auto;
+}
+
+/* second image section */
+
+.second-image-section{
+    position: relative;
+    height: 80vw;
+    max-height: 1100px;
+}
+
+.second-image-section img, .green-rectangle{
+    position: absolute;
+}
+
+.green-rectangle{
+    height: 100%;
+    width: 60%;
+    top: 0;
+    left: 0;
+    background-color: var(--green);
+}
+
+.fifth-image{
+    width: 45%;
+    max-width: 666px;
+    left: 50%;
+    top: 20%;
+}
+
+.fourth-image{
+    width: 35%;
+    max-width: 500px;
+    top: 60%;
+    left: 7%;
+}
+
+.third-image{
+    width: 35%;
+    max-width: 500px;
+    left: 7%;
+    top:10%;
+}
+
+/* poster section */
+
+.poster{
+    display: block;
+    max-width: 1300px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.article-poster{
+    padding: 0;
+}
+
+/* Third images section */
+
+.article-third-image-section{
+    padding: 0;
+}
+.third-image-section{
+    position: relative;
+    width: 100%;
+    max-height: 800px;
+    height: 70vw;
+    overflow: hidden;
+}
+
+.purple-box{
+    position: absolute;
+    background-color: var(--purple);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 70%;
+    max-width: 900px;
+}
+
+.image-6{
+    position: absolute;
+    max-width: 470px;
+    width: 35%;
+    top: 30%;
+    left: 15%;
+}
+
+.image-7{
+    position: absolute;
+    max-width: 550px;
+    width: 40%;
+    top: 15%;
+    left: 60%;
+}
+
+/* Last section */
+
+.last-section {
+    height: 60vh;
+    max-height: 650px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.last-section aside{
+    width: 40%;
+    min-width: 550px;
+}
+
+.aside-card{
+    background-color: var(--lightBlue);
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    padding: 200px 140px 0 140px;
+}
+
+.aside-card h2{
+    font-weight: 400;
+}
+.aside-card a{
+    cursor: pointer;
+}
+
+.last-section img{
+    width: 100%;
+    height: 100%;
+}
+
+.link{
+    margin-top: 2rem;
+    color: var(--blue)
+}
+
+/* Footer */
+
+footer{
+    background-color: white;
+    max-width: 1600px;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+footer a {
+    cursor: pointer;
+}
+footer h2{
+    font-size: 3rem;
+    padding: 5rem 0 2rem 5rem;
+}
+
+footer section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5rem;
+    background-color: white;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    font-size: 1.2rem;
+}
+
+.footnote{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.footnote ul{
+    font-size: 90%;
+    display: flex;
+    list-style: none;
+    padding: 3rem 0 7rem 5rem;
+    gap: 1rem;
+}
+.footnote p{
+    min-width: 100px;
+    margin: auto 1rem;
+}
+
+.footnote img{
+    margin-right: 5rem;
+}
+
+@media (max-width: 1200px){
+    body{
+        background-color: white;
+    }
+    .last-section aside{
+        width: 90%;
+        max-height: 400px;
+    }
+    .last-section aside:last-child{
+        width: 90%;
+        max-height: 250px;
+    }
+    .aside-card{
+        padding: 5%;
+    }
+
+    footer section {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        margin-left: 5rem;
+    }
+}
